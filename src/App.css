@@ -1,0 +1,57 @@
+.delete-btn {
+    cursor: pointer;
+    background-color: red;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%,-50%);
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+.listTransaction:hover .op-1{
+    opacity: 1 !important;
+}
+.redBorder{
+    border-right: 5px solid red;
+}
+.greenBorder{
+    border-right: 5px solid green;
+}
+
+.successDiv{
+    position: absolute;
+    right: 0;
+    width: fit-content;
+    padding: 20px 40px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    opacity: 0;
+}
+.animationClass{
+    animation: myAnimation 4s linear 0s;
+}
+
+@keyframes myAnimation {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
